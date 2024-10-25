@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trabalhando com links</title>
+        <title>Mídias em HTML5</title>
+        <link rel="shortcut icon" href="imagens/foto-p.PNG" type="image/x-icon">
 </head>
-
 <body>
+        
+<h1>Imagem dinâmica</h1>
+<p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
 
-        <h1>Usando links externos</h1> <!--TAG <a href="SITE" target="_blank"-->
-        <p>Você pode acessar o meu <a href="https://github.com/webertrevisan/project-guanabara-exc001/commits/main/"
-                        target="_blank" rel="external">repositório público no GitHub</a></p>
+<picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.PNG" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.PNG" type="image/png">
+        <img src="imagens/foto-g.PNG" alt="imagem flexivel">
+</picture>
 
-        <!--Colocar as tags _black para sites externos-->
-
-        <p>voce tambem pode acessar o meu <a href="https://www.youtube.com/@EbimeSami" target="_blank"
-                        rel="external">Canal
-                        do Youtube</a></p>
-
-        <h2>Usando links Internos</h2>
-        <p>Esta é a minha primeira página do site. se voce quiser, pode acessar também a minha <a href="./pag002.html"
-                        target="_self" rel="next">segunda página</a></p>
-
-        <p>Voce também pode acessar a minha <a href="noticias/pag003.html" target="_self" rel="next">terceira página</a>
-                de
-                notícias</p>
-
-                <h1>Links para download</h1>
-                <ul>
-                        <li><a href="livro/MAPADEV-2023.pdf" download="MAPADEV-2023" type="application/pdf">Baixar o livro em PDF</a></li>
-                        <li><a href="livro/MAPADEV-2023.rar" download="MAPADEV-2023.rar" type="application/rar ">Livro compactado em ZIP</a></li>
-                </ul>
 </body>
-
-</html> 
+</html>
