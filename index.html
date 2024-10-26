@@ -17,5 +17,20 @@
         <img src="imagens/foto-g.PNG" alt="imagem flexivel">
 </picture>
 
+<h1>Reproduzindo audio</h1>
+<p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+<audio src="midia/cool-revenge.mp3" controls></audio>
+<!--MP3, WAV, OGG Formatos compativeis-->
+
+<p>Outra maneira de adicionar audio</p>
+
+<audio preload="metadata" controls loop>
+        <source src="/midia/ringside.mp3" type="audio/mpeg">
+        <source src="/midia/ringside.ogg" type="audio/ogg">
+        <source src="/midia/ringside.wav" type="audio/wav">
+        <p>Indelizmente seu navegador nao consegue reproduzir áudio. <a href="midia/ringside.mp3">Click aqui para baixar o arquivo MP3</a></p>
+</audio> <!--Loop para ficar repetindo o audio autoplay para iniciar sozinho controls para aparecer os controles de audio-->
+
 </body>
 </html>
