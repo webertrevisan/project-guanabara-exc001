@@ -3,34 +3,54 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mídias em HTML5</title>
-        <link rel="shortcut icon" href="imagens/foto-p.PNG" type="image/x-icon">
+        <title>Videos com HTML5</title>
 </head>
 <body>
         
-<h1>Imagem dinâmica</h1>
-<p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+<h1>Inserindo vídeos hospedados localmente</h1>
+<p>este vídeo está hospedado no meu próprio servidor</p>
 
-<picture>
-        <source media="(max-width: 750px)" srcset="imagens/foto-p.PNG" type="image/png">
-        <source media="(max-width: 1050px)" srcset="imagens/foto-m.PNG" type="image/png">
-        <img src="imagens/foto-g.PNG" alt="imagem flexivel">
-</picture>
+<video src="midia/meu-video.mp4" width="200" poster="imagens/lemon.png" controls></video>
 
-<h1>Reproduzindo audio</h1>
-<p>Vamos aprender a reproduzir áudios em HTML5.</p>
 
-<audio src="midia/cool-revenge.mp3" controls></audio>
-<!--MP3, WAV, OGG Formatos compativeis-->
+<h2>Melhor maneira de colocar um video no seu site</h2>
 
-<p>Outra maneira de adicionar audio</p>
+<video controls poster="imagens/lemon.png" width="200">
+<source src="midia/meu-video.mp4" type="video/mp4">
 
-<audio preload="metadata" controls loop>
-        <source src="/midia/ringside.mp3" type="audio/mpeg">
-        <source src="/midia/ringside.ogg" type="audio/ogg">
-        <source src="/midia/ringside.wav" type="audio/wav">
-        <p>Indelizmente seu navegador nao consegue reproduzir áudio. <a href="midia/ringside.mp3">Click aqui para baixar o arquivo MP3</a></p>
-</audio> <!--Loop para ficar repetindo o audio autoplay para iniciar sozinho controls para aparecer os controles de audio-->
+<source src="midia/meu-video.mkv" type="video/mkv">
+
+<source src="midia/meu-video.m4v" type="video/mp4">
+
+<source src="midia/Meu-Video.webm" type="video/webm">
+
+<p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+
+<p><h2>Melhor maneira de colocar um video no seu site</h2>
+</video>
+
+<<<<<<< HEAD
+=======
+<h2> codigos para aparecer no site</h2>
+
+<p><ul>
+        <li> &lt;video controls width="200">
+                &lt;source src="midia/meu-video.mp4" type="video/mp4">
+                <br>
+                &lt;source src="midia/meu-video.mkv" type="video/mkv">
+        <br>
+                &lt;source src="midia/meu-video.m4v" type="video/mp4">
+                <br>
+                &lt;source src="midia/Meu-Video.webm" type="video/webm">
+                <br>
+                <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+                
+                <p><h2>Melhor maneira de colocar um video no seu site</h2>
+                </video&gt;</li>
+</ul></p>
+
+>>>>>>> 7719c2f (Class 12: videos como colocar videos no HTML)
+<!--TAGS <Video controls poster> -->
 
 </body>
 </html>
